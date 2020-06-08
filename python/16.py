@@ -12,3 +12,9 @@ for i in range(1,1000):
     if carry>0:
         muls.insert(0,carry)
 print(sum(muls))
+
+#method two
+s=0
+for i in str(2**1000):
+    s+=int(i)
+print(s)
