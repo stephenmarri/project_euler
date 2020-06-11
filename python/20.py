@@ -18,3 +18,10 @@ for i in range(2,101):
     result = mul(result,i)
 
 print(sum(result))
+
+############## Method two
+
+fact=1
+for i in range(1,101):
+    fact*=i
+print(sum([int(i) for i in str(fact)]))
