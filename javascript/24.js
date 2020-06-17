@@ -1,7 +1,7 @@
 let limit=1000000
 
 function fact(n){
-    if(n<2) return 1
+    if(n<2) return 1    
     return n*(fact(n-1))
 }
 
