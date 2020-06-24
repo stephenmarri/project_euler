@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&fameil=Popppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&fameil=Popppins&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Steve's Project Euler Solutions</title>
 </head>
@@ -28,10 +28,22 @@
                 </div>
                 
                 <div id="content__wrapper">
-                    <div id="question"></div>
-                    <div id="code"></div>
-                    <div id="answer"></div>
-                    <div id="other"></div>
+                    <div class="block" id="question">
+                        <div id="block__header"><span>Question</span></div>
+                        <div id="block__content"> <p class="content_span" id="q_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut explicabo tempore voluptatum harum autem ex obcaecati omnis, dolorem rem nam! Sequi officia, itaque earum minima ratione ullam nobis vel voluptates consequatur, perferendis quidem cumque tempore optio beatae quaerat harum ad. Ex obcaecati ipsam tenetur cumque ipsa quidem mollitia pariatur aliquid! Maiores, cupiditate.</p></div>
+                    </div>
+                    <div class="block" id="code">
+                        <div id="block__header"><span>Code</span></div>
+                        <div id="block__content"><span  class="content_span" id="code_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel asperiores officiis autem deserunt quod doloremque non veritatis? Rem, dignissimos aliquid!</span></div>
+                    </div>
+                    <div class="block" id="answer">
+                        <div id="block__header"><span>Answer</span></div>
+                        <div id="block__content"><span  class="content_span" id="ans_text">Lorem</span></div>
+                    </div>
+                    <div class="block" id="other">
+                        <div id="block__header"><span>Info</span></div>
+                        <div id="block__content"><span  class="content_span" id="info_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, unde.</span> </div>
+                    </div>
                 </div>
 
 
@@ -70,6 +82,8 @@
                 </div>
             </div>
 
+
+    <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

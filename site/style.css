@@ -41,7 +41,7 @@ body{
 
 /*********** index ************/
 
-/***********solution ************/
+/***********buttons ************/
 #solution__wrapper{
     height: 92%;
     min-height: 90%;
@@ -62,6 +62,8 @@ body{
     width: 80%;
     font-weight: normal;
 }
+
+
 #problem_button:active{
     transform: scale(0.98);
 }
@@ -74,11 +76,10 @@ body{
     padding: 0.3rem 1.2rem;
     cursor: pointer;
     border: 2px solid #2d3436;
-    box-sizing: unset;
 }
 
 #javascript_button{
-    margin-left:   2rem;
+    margin-left: 1rem;
 }
 #section__header .active{
     background-color: whitesmoke;
@@ -86,7 +87,64 @@ body{
     font-weight: bold;
     border: 2px solid #2d3436;
 }
-/***********solution ************/
+/***********buttons ************/
+
+/*********** content************/
+#content__wrapper{
+    width: 100%;
+}
+
+.block{
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem ;
+    border-radius: 5px;
+    
+}
+
+#block__header{
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    background-color: #a4b0be;
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid whitesmoke ;
+    
+}
+
+#block__header span{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#block__content{
+    width: 100%;
+
+    min-height: 10vh;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.content_span{
+    font-family: 'Roboto';
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-left: 1rem;
+    padding-top: 0.5rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    line-height: 2.25rem;
+    font-size: 1.75rem;
+    text-align: justify;
+}
+
+
+
+/*********** content************/
 
 
 
