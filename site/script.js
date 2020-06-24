@@ -1,4 +1,5 @@
 //##################################### modal
+window.onload = (function(){ prettyPrint(); });
 const menuButton = document.querySelector('#index__text')
 const section_header= document.querySelector('#pb__text')
 const problem_button = document.querySelector('#problem_button span')
@@ -11,7 +12,7 @@ problem_button.addEventListener('click',menuHandler)
 //content
 let questionHtml=document.querySelector('#q_text')
 let answerHtml=document.querySelector('#ans_text')
-let codeHtml=document.querySelector('#code_text')
+let codeHtml=document.querySelector('#quine')
 let infoHtml=document.querySelector('#info_text')
 
 function menuHandler(){
@@ -31,7 +32,7 @@ function modalHandler(){
 }
 //##################################### modal
 
-async function populate(id){
+ function populate(id){
    const total= Object.keys(data).length
    if(id < 0 || id > total) return
 
@@ -42,11 +43,12 @@ async function populate(id){
     let info = data[`item${id}`]["info"]
 
     questionHtml.textContent=question
-    codeHtml.textContent=code
+    codeHtml.innerHTML=code
     answerHtml.textContent=answer
     infoHtml.textContent=info
      
-
+    codeHtml.classList.remove('prettyprinted')
+    prettyPrint()
     
 
     

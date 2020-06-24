@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prettify/prettify.css">
+    <link rel="stylesheet" href="sunburst.css">
+    <!-- <link rel="stylesheet" href="desert.css"> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&fameil=Popppins&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -34,7 +37,47 @@
                     </div>
                     <div class="block" id="code">
                         <div id="block__header"><span>Code</span></div>
-                        <div id="block__content"><pre  class="content_span" id="code_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel asperiores officiis autem deserunt quod doloremque non veritatis? Rem, dignissimos aliquid!</pre></div>
+                        <div id="block__content"><pre  class="prettyprint" id="quine">
+                            import  math
+    number = 100
+    primes=[]
+    
+    divisorSum=[[0,0],[1,0]]
+    def calcDivisors(n):
+        maxNum=n
+        i=2
+        while i<=maxNum:
+            divisors=[]
+            num=i
+    
+            for j in primes:
+                if j>num: break
+                divCounter=0
+                while num%j==0:
+                    divCounter+=1
+                    num/=j
+                if divCounter>0:   divisors.append([j, divCounter])
+            if num==i:  primes.append(num)
+    
+            sum=1
+            if len(divisors)>0:
+                for x in divisors:
+                    sum*=( ( (math.pow(x[0],x[1]+1)) -1 ) / ( x[0] -1 ))
+            if i<=n:   maxNum = sum if sum > maxNum else maxNum
+            divisorSum.append([i,int(sum)-i])
+            i+=1
+    
+    calcDivisors(number)
+    
+    amicableSum=0;
+    for i in range(2,number):
+        x= divisorSum[i]
+        if x[1] <= number and x[1] != x[0]:
+            if divisorSum[x[1]][1] == x[0]:
+                amicableSum+=x[0]
+    
+    print(amicableSum)
+                        </pre></div>
                     </div>
                     <div class="block" id="answer">
                         <div id="block__header"><span>Answer</span></div>
@@ -82,6 +125,10 @@
                 </div>
             </div>
 
+
+            <!-- <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script> -->
+
+    <script src="prettify/prettify.js"></script>
     <script src="answers.js"></script>
     <script src="data.js"></script>
     <script src="script.js"></script>

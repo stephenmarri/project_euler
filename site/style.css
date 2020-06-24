@@ -125,7 +125,6 @@ body{
 
     min-height: 8vh;
     background-color: white;
-    color: black;
 }
 
 .content_span{
@@ -137,6 +136,11 @@ body{
     line-height: 2.25rem;
     font-size: 1.75rem;
     text-align: justify;
+    
+}
+
+#quine{
+    font-size: 1.5rem;
     
 }
 

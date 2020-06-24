@@ -20,7 +20,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.`,
 The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.`,
         code:{
             count:2,
-            python:"/python/12.py",
+            python:answers.ans02,
             javascript:"javascript/1.js"
         },
         answer:"123",
@@ -33,7 +33,7 @@ The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 be
         question:"If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.",
         code:{
             count:2,
-            python:"file:///C:/StephenMarri/web_dev/project_euler(19)/python/13.py",
+            python:answers.ans03,
             javascript:"javascript/1.js"
         },
         answer:"123",
