@@ -45,7 +45,7 @@ body{
 #solution__wrapper{
     height: 92%;
     min-height: 90%;
-    width: 90%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -123,15 +123,15 @@ body{
 #block__content{
     width: 100%;
 
-    min-height: 10vh;
-    background-color: whitesmoke;
+    min-height: 8vh;
+    background-color: white;
     color: black;
 }
 
 .content_span{
     font-family: 'Roboto';
     display: block;
-    height: 100%;
+    height: auto;
     width: 100%;
     margin-left: 1rem;
     padding-top: 0.5rem;
@@ -140,9 +140,14 @@ body{
     line-height: 2.25rem;
     font-size: 1.75rem;
     text-align: justify;
+    
 }
 
 
+
+pre {
+    white-space: pre-wrap;
+}
 
 /*********** content************/
 

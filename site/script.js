@@ -36,7 +36,8 @@ async function populate(id){
    if(id < 0 || id > total) return
 
     let question = data[`item${id}`]["question"]
-    let code = data[`item${id}`]["code"]
+    let code = data[`item${id}`]["code"]["python"]
+    console.log('code: ', code);
     let answer = data[`item${id}`]["answer"]
     let info = data[`item${id}`]["info"]
 
@@ -46,7 +47,7 @@ async function populate(id){
     infoHtml.textContent=info
      
 
-    fetch(data[`item${id}`]["code"]["python"], {mode: "no-cors"}).then(res => res.text()).then(text => console.log(text))
+    
 
     
     
