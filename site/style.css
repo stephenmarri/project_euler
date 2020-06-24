@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #cfd8db   ;
+}
+
+/*********** index  ************/
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+
+
+#top__wrapper{
+    width: 100%;
+    height: 8%;
+    border-bottom: 0px solid brown;
+    background-color: #bac1c4;
+    font-size: 3rem;    
+    line-height: 5rem;
+    text-align: center;
+}
+#index__wrapper{
+    float: left;
+    height: 100%;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+/*********** index ************/
+
+/***********solution ************/
+#solution__wrapper{
+    height: 92%;
+    min-height: 90%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section__header{
+    width: 100%;
+    height: 5rem;
+    font-size: 2rem;
+
+    
+}
+
+#problem_button{
+    width: 80%;
+    font-weight: normal;
+}
+#problem_button:active{
+    transform: scale(0.98);
+}
+
+
+
+#python_button, #javascript_button, #problem_button > span{
+    background-color: #2d3436;
+    color: whitesmoke;
+    padding: 0.3rem 1.2rem;
+    cursor: pointer;
+    border: 2px solid #2d3436;
+    box-sizing: unset;
+}
+
+#javascript_button{
+    margin-left:   2rem;
+}
+#section__header .active{
+    background-color: whitesmoke;
+    color: #2d3436;
+    font-weight: bold;
+    border: 2px solid #2d3436;
+}
+/***********solution ************/
+
+
+
+
+
+
+/*********** modal index ************/
+#modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(178, 190, 195,0.6);
+    font-size: 1.95rem;
+    font-family: 'Poppins';
+}
+#modal__index{
+    width: 25%;
+    height: 100%;
+    background-color: rgb(12, 17, 19);
+    position: relative;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    color: white;    
+    overflow-y: scroll;
+}
+
+.index__tile{
+    padding: 0.9rem 0 0.9rem 3rem;
+    border-bottom: 1px solid rgb(12, 17, 19);
+}
+.index__tile.active{
+    background-color: white;
+    color: rgb(12, 17, 19);
+}
+.index__tile:hover{
+    border-color: whitesmoke;
+    cursor: pointer;
+}
+
+#modal.active{
+    display: block;
+}
+/*********** modal index ************/
+
+
+
+
+
+
+/*********** scroll bar ************/
+/* width */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #636e72;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+}
+/*********** scroll bar ************/
+
+/*********** global ************/
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:active{
+    transform: scale(0.98);
+}
+/*********** global ************/
+
+/*********** media quries************/
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+    #solution__wrapper{
+        height: 92%;
+        min-height: 90%;
+        width: 100%;
+    }
+
+    #section__header{
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #python_button, #javascript_button, #problem_button > span{
+        padding: 0.3rem 0.2rem;
+    }
+
+    #modal__index{
+        width: 65%;
+        height: 100%;
+    }
+}
+/*********** media quries************/
