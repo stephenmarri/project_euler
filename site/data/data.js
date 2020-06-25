@@ -1,4 +1,14 @@
-const data = {
+let  data;
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  
+async function demo() {
+while(!answersLoaded){
+    await sleep(2000);
+}
+data = {
     item01:{
         id:01,
         question:questions[1].text,
@@ -139,3 +149,6 @@ const data = {
         }
     }
 }
+}
+
+demo();

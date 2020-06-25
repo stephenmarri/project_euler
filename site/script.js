@@ -1,5 +1,8 @@
 //##################################### modal
-window.onload = (function(){ 
+window.onload = (async function(){ 
+    while(!answersLoaded){
+        await sleep(2000);
+    }
     populateQuestions();
     populate("01"); 
     prettyPrint(); 

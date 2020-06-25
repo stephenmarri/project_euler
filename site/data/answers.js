@@ -40,7 +40,7 @@ async function getData(type, path){
     let dt = await fetchData(_path);
     return dt
 }
-
+let answersLoaded = false
 async function main(){
     let count = Object.keys(answers).length
     for(let i=0;i<count;i++){
@@ -54,6 +54,7 @@ async function main(){
             answers[key][subKey] = await getData(subKey ,item)
         }
     }
+    answersLoaded=true
 }
 
 main()
