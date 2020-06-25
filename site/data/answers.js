@@ -1,16 +1,17 @@
+function getAnswer(name){
+    console.log('inside');
+    let path = '11.py'
+    let text;
+    fetch('../python/11.py')
+   .then( r => r.text() )
+   .then( t => console.log(t) )
+   console.log(text);
+   return text
+}
+
 const answers={
     ans01:{
-        js:`function multiplesOf3and5(number) {
-            if(number<3) return 0;
-            number--; //should not include the number, so subtracting 1 from it
-            let sumOfAP3 = (3 + (number- (number%3)))*(((number- (number%3))/3)/2);
-            let sumOfAP5 = (5 + (number- (number%5)))*((number- (number%5))/5)/2;
-            let sumOfAP15 = (15 + (number- (number%15)))*((number- (number%15))/15)/2;
-            return sumOfAP3 + sumOfAP5 - sumOfAP15
-          }
-          
-          multiplesOf3and5(9); 
-          `,
+        js: getAnswer("ad"),
         py:`import  math
         number = 100
         primes=[]

@@ -17,6 +17,7 @@ problem_button.addEventListener('click',menuHandler)
 
 //content
 let questionHtml=document.querySelector('#q_text')
+let questionTitle= document.querySelector('#q_title')
 let answerHtml=document.querySelector('#ans_text')
 let codeHtml=document.querySelector('#quine')
 let infoHtml=document.querySelector('#info_text')
@@ -45,11 +46,13 @@ function modalHandler(){
     if(id < 0 || id > total) return
 
     let question = data[`item${id}`]["question"]
+    let q_title = data[`item${id}`]["q_title"]
     let code = data[`item${id}`]["code"]["Python"]
     let answer = data[`item${id}`]["answer"]
     let info = populateInfo(id)
 
     questionHtml.textContent=question
+    questionTitle.textContent=q_title
     answerHtml.textContent=answer
     infoHtml.innerHTML=info
     
@@ -117,3 +120,4 @@ function populateQuestions(){
         modal.appendChild(html)
     }
 }
+
