@@ -156,6 +156,8 @@ body{
     overflow-x: auto;
     white-space: pre !important;
     padding-bottom: 1.5rem;
+    min-height: 5vh;
+    padding-left: 1rem;
 }
 
 
@@ -303,6 +305,7 @@ pre {
     #pb_text{
         padding: 0.3rem 1rem;
     }
+    
 
     #modal{
         height: 100%;

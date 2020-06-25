@@ -1,9 +1,13 @@
 //##################################### modal
-window.onload = (function(){ populate("01"); prettyPrint(); });
+window.onload = (function(){ 
+    populateQuestions();
+    populate("01"); 
+    prettyPrint(); 
+});
 const menuButton = document.querySelector('#index__text')
 const section_header= document.querySelector('#pb__text')
 const problem_button = document.querySelector('#pb__text')
-let index_tiles = document.querySelectorAll('.index__tile')
+let index_tiles;
 let code_btns;
 let current_ID;
 const modal = document.querySelector('#modal')
@@ -25,6 +29,7 @@ function modalHandler(){
     if(event.target.id == "modal"){
         modal.classList.toggle('active')
     }else{ 
+        index_tiles = document.querySelectorAll('.index__tile')
         let prob = event.target
         index_tiles.forEach(x=>x.classList.remove('active'))
         prob.classList.add('active')
@@ -42,11 +47,11 @@ function modalHandler(){
     let question = data[`item${id}`]["question"]
     let code = data[`item${id}`]["code"]["Python"]
     let answer = data[`item${id}`]["answer"]
-    let info = data[`item${id}`]["info"]
+    let info = populateInfo(id)
 
     questionHtml.textContent=question
     answerHtml.textContent=answer
-    infoHtml.textContent=info
+    infoHtml.innerHTML=info
     
     
     populateBtns(id)
@@ -89,4 +94,26 @@ function changeCode(){
     this.classList.add('active')
     console.log(current_ID);
     populateCode(current_ID)
+}
+
+function populateInfo(id){
+    let html="";
+    html+=`<a href="${data[`item${id}`]["info"]["question_link"]}" target=_blank>Link</a> to question.`
+    return html
+}
+
+function populateQuestions(){
+    let count = Object.keys(data).length
+    let modal=document.querySelector('#modal__index')
+    for(let i=1;i<=count;i++){
+        let html = document.createElement('div')
+        html.classList.add('index__tile')
+        if(i<10){
+            html.id=`0${i}`
+        }else{
+            html.id=`${i}`
+        }
+        html.textContent=`Problem - ${html.id}`
+        modal.appendChild(html)
+    }
 }

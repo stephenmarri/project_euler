@@ -1,43 +1,56 @@
 const answers={
-    ans01:`import  math
-    number = 100
-    primes=[]
-    
-    divisorSum=[[0,0],[1,0]]
-    def calcDivisors(n):
-        maxNum=n
-        i=2
-        while i<=maxNum:
-            divisors=[]
-            num=i
-    
-            for j in primes:
-                if j>num: break
-                divCounter=0
-                while num%j==0:
-                    divCounter+=1
-                    num/=j
-                if divCounter>0:   divisors.append([j, divCounter])if divCounter>0:   divisors.append([j, divCounter])if divCounter>0:   divisors.append([j, divCounter])
-            if num==i:  primes.append(num)
-    
-            sum=1
-            if len(divisors)>0:
-                for x in divisors:
-                    sum*=( ( (math.pow(x[0],x[1]+1)) -1 ) / ( x[0] -1 ))
-            if i<=n:   maxNum = sum if sum > maxNum else maxNum
-            divisorSum.append([i,int(sum)-i])
-            i+=1
-    
-    calcDivisors(number)
-    
-    amicableSum=0;
-    for i in range(2,number):
-        x= divisorSum[i]
-        if x[1] <= number and x[1] != x[0]:
-            if divisorSum[x[1]][1] == x[0]:
-                amicableSum+=x[0]
-    
-    print(amicableSum)`,
+    ans01:{
+        js:`function multiplesOf3and5(number) {
+            if(number<3) return 0;
+            number--; //should not include the number, so subtracting 1 from it
+            let sumOfAP3 = (3 + (number- (number%3)))*(((number- (number%3))/3)/2);
+            let sumOfAP5 = (5 + (number- (number%5)))*((number- (number%5))/5)/2;
+            let sumOfAP15 = (15 + (number- (number%15)))*((number- (number%15))/15)/2;
+            return sumOfAP3 + sumOfAP5 - sumOfAP15
+          }
+          
+          multiplesOf3and5(9); 
+          `,
+        py:`import  math
+        number = 100
+        primes=[]
+        
+        divisorSum=[[0,0],[1,0]]
+        def calcDivisors(n):
+            maxNum=n
+            i=2
+            while i<=maxNum:
+                divisors=[]
+                num=i
+        
+                for j in primes:
+                    if j>num: break
+                    divCounter=0
+                    while num%j==0:
+                        divCounter+=1
+                        num/=j
+                    if divCounter>0:   divisors.append([j, divCounter])if divCounter>0:   divisors.append([j, divCounter])if divCounter>0:   divisors.append([j, divCounter])
+                if num==i:  primes.append(num)
+        
+                sum=1
+                if len(divisors)>0:
+                    for x in divisors:
+                        sum*=( ( (math.pow(x[0],x[1]+1)) -1 ) / ( x[0] -1 ))
+                if i<=n:   maxNum = sum if sum > maxNum else maxNum
+                divisorSum.append([i,int(sum)-i])
+                i+=1
+        
+        calcDivisors(number)
+        
+        amicableSum=0;
+        for i in range(2,number):
+            x= divisorSum[i]
+            if x[1] <= number and x[1] != x[0]:
+                if divisorSum[x[1]][1] == x[0]:
+                    amicableSum+=x[0]
+        
+        print(amicableSum)`
+    },
     
     ans02:`
     #modal{
