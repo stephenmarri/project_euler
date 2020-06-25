@@ -14,8 +14,7 @@ data = {
         question:questions[1].text,
         q_title:questions[1].title,
         code:{
-            count:2,
-            Python:answers.ans01.py,
+            count:1,
             JavaScript:answers.ans01.js
         },
         answer:"233168",
@@ -27,8 +26,7 @@ data = {
         id:02,
         question:questions[2],
         code:{
-            count:2,
-            Python:answers.ans02.py,
+            count:1,
             JavaScript:answers.ans02.js
         },
         answer:"4613732",
@@ -40,8 +38,7 @@ data = {
         id:03,
         question:questions[3],
         code:{
-            count:2,
-            Python:"hello this is python    ",
+            count:1,
             JavaScript:"this is javascript"
             
         },
@@ -54,8 +51,7 @@ data = {
         id:04,
         question:questions[4],
         code:{
-            count:2,
-            Python:answers.ans04.py,
+            count:1,
             JavaScript:answers.ans04.js
             
         },
@@ -68,9 +64,8 @@ data = {
         id:05,
         question:questions[5],
         code:{
-            count:2,
-            Python:"hello this is python    ",
-            JavaScript:"this is javascript"
+            count:1,
+            JavaScript:answers.ans05.js
             
         },
         answer:"6857",
@@ -82,9 +77,8 @@ data = {
         id:06,
         question:questions[6],
         code:{
-            count:2,
-            Python:"hello this is python    ",
-            JavaScript:"this is javascript"
+            count:1,
+            JavaScript:answers.ans06.js
             
         },
         answer:"6857",
@@ -96,9 +90,8 @@ data = {
         id:07,
         question:questions[7],
         code:{
-            count:2,
-            Python:"hello this is python    ",
-            JavaScript:"this is javascript"
+            count:1,
+            JavaScript:answers.ans07.js
             
         },
         answer:"6857",
@@ -110,10 +103,8 @@ data = {
         id:08,
         question:questions[8],
         code:{
-            count:2,
-            Python:"hello this is python    ",
-            JavaScript:"this is javascript"
-            
+            count:1,
+            JavaScript:answers.ans08.js            
         },
         answer:"6857",
         info:{
@@ -124,10 +115,8 @@ data = {
         id:09,
         question:questions[9],
         code:{
-            count:2,
-            Python:"hello this is python    ",
-            JavaScript:"this is javascript"
-            
+            count:1,
+            JavaScript:answers.ans09.js            
         },
         answer:"6857",
         info:{
@@ -138,14 +127,38 @@ data = {
         id:10,
         question:questions[10],
         code:{
-            count:2,
-            Python:"hello this is python    ",
-            JavaScript:"this is javascript"
-            
+            count:1,
+            JavaScript:answers.ans10.js            
         },
         answer:"6857",
         info:{
             question_link:"https://projecteuler.net/problem=10",            
+        }
+    },
+    item11:{
+        id:11,
+        question:questions[11],
+        code:{
+            count:2,
+            JavaScript:answers.ans11.js,
+            Python: answers.ans11.py           
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=11",            
+        }
+    },
+    item12:{
+        id:12,
+        question:questions[12],
+        code:{
+            count:2,
+            JavaScript:answers.ans12.js,
+            Python: answers.ans12.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=12",            
         }
     }
 }

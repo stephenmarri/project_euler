@@ -8,13 +8,44 @@ let answers={
         js:  "02.js",
         py: "not solved yet"
     },
-
     ans03:{
         js:  "03.js",
         py: "not solved yet"
     },
     ans04:{
         js:  "04.js",
+        py: "not solved yet"
+    },
+    ans05:{
+        js:  "05.js",
+        py: "not solved yet"
+    },
+    ans06:{
+        js:  "06.js",
+        py: "not solved yet"
+    },
+    ans07:{
+        js:  "07.js",
+        py: "not solved yet"
+    },
+    ans08:{
+        js:  "08.js",
+        py: "not solved yet"
+    },
+    ans09:{
+        js:  "09.js",
+        py: "not solved yet"
+    },
+    ans10:{
+        js:  "10.js",
+        py: "not solved yet"
+    },
+    ans11:{
+        js:  "11.js",
+        py: "not solved yet"
+    },
+    ans12:{
+        js:  "12.js",
         py: "not solved yet"
     }
 }
