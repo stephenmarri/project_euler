@@ -2,7 +2,7 @@
 window.onload = (function(){ prettyPrint(); });
 const menuButton = document.querySelector('#index__text')
 const section_header= document.querySelector('#pb__text')
-const problem_button = document.querySelector('#problem_button span')
+const problem_button = document.querySelector('#pb__text')
 let index_tiles = document.querySelectorAll('.index__tile')
 const modal = document.querySelector('#modal')
 modal.addEventListener('click',modalHandler)

@@ -51,20 +51,29 @@ body{
 }
 
 #section__header{
-    width: 100%;
+    margin-left: 0.5rem;
     height: 5rem;
-    font-size: 2rem;
-
-    
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    justify-content: flex-start !important;
 }
 
 #problem_button{
-    width: 80%;
     font-weight: normal;
+    
 }
 
+#pb__text:hover{
+    background-color: #dfe4ea;
+    color: #2f3542;
+    font-weight: bold;
+    border: 3px solid #2f3542;
+}
 
 #problem_button:active{
+    transform: scale(0.98);
+}
+#index__text:active{
     transform: scale(0.98);
 }
 
@@ -92,6 +101,7 @@ body{
 /*********** content************/
 #content__wrapper{
     width: 100%;
+    margin-bottom: 2rem;
 }
 
 .block{
@@ -116,15 +126,15 @@ body{
 }
 
 #block__header span{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 #block__content{
     width: 100%;
 
-    min-height: 8vh;
-    background-color: white;
+    min-height: 5vh;
+    background-color: whitesmoke;
 }
 
 .content_span{
@@ -132,7 +142,7 @@ body{
     display: block;
     height: auto;
     width: 100%;
-    padding: 0.5rem 3rem 1rem 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
     line-height: 2.25rem;
     font-size: 1.75rem;
     text-align: justify;
@@ -140,8 +150,8 @@ body{
 }
 
 #quine{
-    font-size: 1.5rem;
-    
+    font-size: 1.5rem;    
+    padding-bottom: 2rem;
 }
 
 
@@ -257,7 +267,7 @@ pre {
     }
 
     #section__header{
-        width: 98%;
+        width: 99%;
         margin-left: auto;
         margin-right: auto;
     }
