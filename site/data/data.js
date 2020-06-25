@@ -18,8 +18,8 @@ const data = {
         question:questions[2],
         code:{
             count:2,
-            Python:answers.ans02,
-            JavaScript:"javascript/1.js"
+            Python:answers.ans02.py,
+            JavaScript:answers.ans02.js
         },
         answer:"4613732",
         info:{
