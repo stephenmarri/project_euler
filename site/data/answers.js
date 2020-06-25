@@ -8,9 +8,11 @@ function getAnswer(name,type){
     }
     console.log(path);
 
-    return fetch(path)
+    let result=""
+    fetch(path)
    .then( r => r.text() )
-   .then( t =>  t)
+   .then( t =>  result = t)
+   return result
 }
 
 const answers={
