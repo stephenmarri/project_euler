@@ -5,8 +5,8 @@ const data = {
 Find the sum of all the multiples of 3 or 5 below 1000.`,
         code:{
             count:2,
-            python:answers.ans01,
-            javascript:"javascript/1.js"
+            Python:answers.ans01,
+            JavaScript:"javascript/1.js"
         },
         answer:"123",
         info:{
@@ -20,8 +20,8 @@ Find the sum of all the multiples of 3 or 5 below 1000.`,
 The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.`,
         code:{
             count:2,
-            python:answers.ans02,
-            javascript:"javascript/1.js"
+            Python:answers.ans02,
+            JavaScript:"javascript/1.js"
         },
         answer:"123",
         info:{
@@ -33,8 +33,9 @@ The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 be
         question:"If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.",
         code:{
             count:2,
-            python:answers.ans03,
-            javascript:"javascript/1.js"
+            Python:"hello this is python    ",
+            JavaScript:"this is javascript"
+            
         },
         answer:"123",
         info:{

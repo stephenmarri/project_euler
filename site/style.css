@@ -33,10 +33,13 @@ body{
     text-align: center;
 }
 #index__wrapper{
-    float: left;
-    height: 100%;
-    margin-left: 2rem;
+    justify-self: flex-start;
     cursor: pointer;
+}
+
+#header{
+    width: 93%;
+    text-align: center;
 }
 
 /*********** index ************/
@@ -51,17 +54,16 @@ body{
 }
 
 #section__header{
-    margin-left: 0.5rem;
+    margin:1rem 0 1rem 0.5rem;
     height: 5rem;
     font-size: 2.5rem;
-    margin-top: 1rem;
     justify-content: flex-start !important;
 }
 
 #problem_button{
     font-weight: normal;
-    
 }
+
 
 #pb__text:hover{
     background-color: #dfe4ea;
@@ -79,10 +81,10 @@ body{
 
 
 
-#python_button, #javascript_button, #problem_button > span{
+#pb__text{
     background-color: #2d3436;
     color: whitesmoke;
-    padding: 0.3rem 1.2rem;
+    padding: 0.3rem 2rem;
     cursor: pointer;
     border: 2px solid #2d3436;
 }
@@ -108,8 +110,8 @@ body{
     width: 99%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem ;
-    border-radius: 5px;
+    margin-bottom: 2rem    ;
+    border: 1px solid #57606f;
     
 }
 
@@ -121,11 +123,11 @@ body{
     background-color: #a4b0be;
     color: black;
     font-weight: bold;
-    border-bottom: 1px solid whitesmoke ;
     
 }
 
 #block__header span{
+    height: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -151,7 +153,9 @@ body{
 
 #quine{
     font-size: 1.5rem;    
-    padding-bottom: 2rem;
+    overflow-x: auto;
+    white-space: pre !important;
+    padding-bottom: 1.5rem;
 }
 
 
@@ -160,6 +164,20 @@ pre {
     white-space: pre-wrap;
 }
 
+
+.c_btn, .c_btn{
+    float: right;
+    padding: 0 1rem;
+    cursor: pointer;
+    margin: 0 !important;
+    text-transform: capitalize;
+}
+
+#code .active{
+    border: 0;
+    background-color: black;
+    color: whitesmoke;
+}
 /*********** content************/
 
 
@@ -188,7 +206,7 @@ pre {
     top: 0;
     opacity: 1;
     color: white;    
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .index__tile{
@@ -217,22 +235,29 @@ pre {
 /*********** scroll bar ************/
 /* width */
 ::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+::-webkit-scrollbar:focus {
+    width: 1rem !important;
+    height: 1rem !important;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #000;    
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #636e72;
+    background: #1abc9c;
+    border-radius: 2rem;
+    cursor: pointer;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #000;
+    background: #ffa502;
 }
 /*********** scroll bar ************/
 
@@ -260,6 +285,9 @@ pre {
     html {
         font-size: 8px;
     }
+    #header{
+        width: 90%;
+    }
     #solution__wrapper{
         height: 92%;
         min-height: 90%;
@@ -272,8 +300,8 @@ pre {
         margin-right: auto;
     }
     
-    #python_button, #javascript_button, #problem_button > span{
-        padding: 0.3rem 0.2rem;
+    #pb_text{
+        padding: 0.3rem 1rem;
     }
 
     #modal{

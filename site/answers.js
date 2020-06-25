@@ -17,7 +17,7 @@ const answers={
                 while num%j==0:
                     divCounter+=1
                     num/=j
-                if divCounter>0:   divisors.append([j, divCounter])
+                if divCounter>0:   divisors.append([j, divCounter])if divCounter>0:   divisors.append([j, divCounter])if divCounter>0:   divisors.append([j, divCounter])
             if num==i:  primes.append(num)
     
             sum=1
