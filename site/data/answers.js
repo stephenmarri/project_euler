@@ -34,7 +34,7 @@ let answers={
     },
     ans09:{
         js:  "09.js",
-        py: "not solved yet"
+        py: "09.py"
     },
     ans10:{
         js:  "10.js",
@@ -42,11 +42,11 @@ let answers={
     },
     ans11:{
         js:  "11.js",
-        py: "not solved yet"
+        py: "11.py"
     },
     ans12:{
         js:  "12.js",
-        py: "not solved yet"
+        py: "12.py"
     }
 }
 
