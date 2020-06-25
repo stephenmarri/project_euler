@@ -45,8 +45,8 @@ const data = {
         question:questions[4],
         code:{
             count:2,
-            Python:"hello this is python    ",
-            JavaScript:"this is javascript"
+            Python:answers.ans04.py,
+            JavaScript:answers.ans04.js
             
         },
         answer:"6857",

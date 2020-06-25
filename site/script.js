@@ -95,7 +95,6 @@ function populateCode(id){
 function changeCode(){
     code_btns.forEach(x=>x.classList.remove('active'))
     this.classList.add('active')
-    console.log(current_ID);
     populateCode(current_ID)
 }
 
