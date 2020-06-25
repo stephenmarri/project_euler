@@ -115,8 +115,9 @@ data = {
         id:09,
         question:questions[9],
         code:{
-            count:1,
-            JavaScript:answers.ans09.js            
+            count:2,
+            JavaScript:answers.ans09.js,
+            Python: answers.ans09.py           
         },
         answer:"6857",
         info:{
