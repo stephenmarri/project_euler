@@ -1,7 +1,7 @@
 //##################################### modal
 window.onload = (async function(){ 
     while(!answersLoaded){
-        await sleep(2000);
+        await sleep(200);
     }
     populateQuestions();
     populate("01"); 
