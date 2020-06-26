@@ -46,7 +46,7 @@ function modalHandler(){
  function populate(id){
     current_ID=id
     const total= Object.keys(data).length
-    if(id < 0 || id > total) return
+    if(id < 0) return
 
     let question = data[`item${id}`]["question"]
     let q_title = data[`item${id}`]["q_title"]
