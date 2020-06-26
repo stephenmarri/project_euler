@@ -39,7 +39,7 @@ data = {
         question:questions[3],
         code:{
             count:1,
-            JavaScript:"this is javascript"
+            JavaScript:answers.ans03.js
             
         },
         answer:"6857",
@@ -160,6 +160,266 @@ data = {
         answer:"6857",
         info:{
             question_link:"https://projecteuler.net/problem=12",            
+        }
+    },
+    item13:{
+        id:13,
+        question:questions[13],
+        code:{
+            count:2,
+            JavaScript:answers.ans13.js,
+            Python: answers.ans13.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=13",            
+        }
+    },
+item14:{
+        id:14,
+        question:questions[14],
+        code:{
+            count:2,
+            JavaScript:answers.ans14.js,
+            Python: answers.ans14.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=14",            
+        }
+    },
+item15:{
+        id:15,
+        question:questions[15],
+        code:{
+            count:2,
+            JavaScript:answers.ans15.js,
+            Python: answers.ans15.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=15",            
+        }
+    },
+item16:{
+        id:16,
+        question:questions[16],
+        code:{
+            count:2,
+            JavaScript:answers.ans16.js,
+            Python: answers.ans16.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=16",            
+        }
+    },
+item17:{
+        id:17,
+        question:questions[17],
+        code:{
+            count:2,
+            JavaScript:answers.ans17.js,
+            Python: answers.ans17.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=17",            
+        }
+    },
+item18:{
+        id:18,
+        question:questions[18],
+        code:{
+            count:2,
+            JavaScript:answers.ans18.js,
+            Python: answers.ans18.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=18",            
+        }
+    },
+item19:{
+        id:19,
+        question:questions[19],
+        code:{
+            count:2,
+            JavaScript:answers.ans19.js,
+            Python: answers.ans19.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=19",            
+        }
+    },
+item20:{
+        id:20,
+        question:questions[20],
+        code:{
+            count:2,
+            JavaScript:answers.ans20.js,
+            Python: answers.ans20.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=20",            
+        }
+    },
+item21:{
+        id:21,
+        question:questions[21],
+        code:{
+            count:2,
+            JavaScript:answers.ans21.js,
+            Python: answers.ans21.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=21",            
+        }
+    },
+item22:{
+        id:22,
+        question:questions[22],
+        code:{
+            count:2,
+            JavaScript:answers.ans22.js,
+            Python: answers.ans22.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=22",            
+        }
+    },
+item23:{
+        id:23,
+        question:questions[23],
+        code:{
+            count:2,
+            JavaScript:answers.ans23.js,
+            Python: answers.ans23.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=23",            
+        }
+    },
+item24:{
+        id:24,
+        question:questions[24],
+        code:{
+            count:2,
+            JavaScript:answers.ans24.js,
+            Python: answers.ans24.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=24",            
+        }
+    },
+item25:{
+        id:25,
+        question:questions[25],
+        code:{
+            count:2,
+            JavaScript:answers.ans25.js,
+            Python: answers.ans25.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=25",            
+        }
+    },
+item26:{
+        id:26,
+        question:questions[26],
+        code:{
+            count:2,
+            JavaScript:answers.ans26.js,
+            Python: answers.ans26.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=26",            
+        }
+    },
+item27:{
+        id:27,
+        question:questions[27],
+        code:{
+            count:2,
+            JavaScript:answers.ans27.js,
+            Python: answers.ans27.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=27",            
+        }
+    },
+item28:{
+        id:28,
+        question:questions[28],
+        code:{
+            count:2,
+            JavaScript:answers.ans28.js,
+            Python: answers.ans28.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=28",            
+        }
+    },
+item29:{
+        id:29,
+        question:questions[29],
+        code:{
+            count:2,
+            JavaScript:answers.ans29.js,
+            Python: answers.ans29.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=29",            
+        }
+    },
+item30:{
+        id:30,
+        question:questions[30],
+        code:{
+            count:2,
+            JavaScript:answers.ans30.js,
+            Python: answers.ans30.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=30",            
+        }
+    },
+item31:{
+        id:31,
+        question:questions[31],
+        code:{
+            count:2,
+            JavaScript:answers.ans31.js,
+            Python: answers.ans31.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=31",            
+        }
+    },
+    item67:{
+        id:67,
+        question:questions[67],
+        code:{
+            count:2,
+            JavaScript:answers.ans67.js,
+            Python: answers.ans67.py            
+        },
+        answer:"6857",
+        info:{
+            question_link:"https://projecteuler.net/problem=67",            
         }
     }
 }

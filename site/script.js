@@ -110,13 +110,14 @@ function populateInfo(id){
 function populateQuestions(){
     let count = Object.keys(data).length
     let modal=document.querySelector('#modal__index')
-    for(let i=1;i<=count;i++){
+    for(let i=0;i<count;i++){
+        let key = Object.keys(data)[i]
         let html = document.createElement('div')
         html.classList.add('index__tile')
-        if(i<10){
-            html.id=`0${i}`
+        if(i<9){
+            html.id=`0${data[key]["id"]}`
         }else{
-            html.id=`${i}`
+            html.id=`${data[key]["id"]}`
         }
         html.textContent=`Problem - ${html.id}`
         modal.appendChild(html)
