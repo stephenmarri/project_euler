@@ -66,6 +66,8 @@ function modalHandler(){
     
     code_btns= document.querySelectorAll('.c_btn')
     code_btns.forEach(x=>x.addEventListener('click',changeCode))
+    MathJax.typeset()
+
     
     }
 
@@ -124,3 +126,4 @@ function populateQuestions(){
     }
 }
 
+Mathjax.
