@@ -1,6 +1,9 @@
 //##################################### modal
 window.onload = (async function(){ 
-    while(!answersLoaded && typeof(data)=="object"){
+    while(!answersLoaded){
+        await sleep(1);
+    }
+    while( typeof(data)!="object"){
         await sleep(1);
     }
     populateQuestions();
