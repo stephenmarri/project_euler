@@ -102,10 +102,62 @@ body{
 }
 /***********buttons ************/
 
+/*********** intro************/
+#intro__wrapper{
+    display: none;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    outline: 0px solid black;
+    font-size: 2rem;
+    font-family: 'Pangolin';
+    padding: 2rem 1rem 4rem 2rem;
+    background-color: #e7edf0;
+}
+#intro__header{
+    font-size: 1.25em;
+    line-height: 5rem;
+}
+
+#intro__wrapper h2{
+    line-height: 1.5em;
+}
+
+#pEuler{
+    color: brown;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+#js{
+    color: rgb(207, 207, 30);
+}
+
+#py{
+    color: blue;
+}
+
+#pr{
+    border: 1px solid black;
+    padding: 0.2rem 0.4rem;
+    background-color: #57606f;
+    font-family: 'Raleway';
+    color: white;
+}
+
+#prob_one{
+    text-decoration: none;
+    font-weight: bold;
+}
+/*********** intro************/
+
+
 /*********** content************/
 #content__wrapper{
     width: 100%;
     margin-bottom: 2rem;
+    display: block;
 }
 
 .block{
@@ -308,6 +360,11 @@ pre {
         height: 92%;
         min-height: 90%;
         width: 100%;
+    }
+
+    #intro__header{
+        font-size: 1.25em;
+        line-height: 3rem;
     }
 
     #section__header{

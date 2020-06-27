@@ -1,6 +1,9 @@
 //##################################### modal
 const loader = document.querySelector('#loader_div')
 const wrapper = document.querySelector('.wrapper')
+const content_wrapper = document.querySelector('#content__wrapper')
+const intro = document.querySelector('#intro__wrapper')
+
 window.onload = (async function(){ 
     while(!answersLoaded){
         await sleep(1);
@@ -40,16 +43,25 @@ function menuHandler(){
 }
 
 function modalHandler(){
+    
     if(event.target.id == "modal"){
-    document.querySelector("body").style.overflow = "unset";
-    modal.classList.toggle('active')
+        modal.classList.toggle('active')
+        document.querySelector("body").style.overflow = "unset";
     }else{ 
+        if(event.target.id=="00"){
+            intro.style.display="block"
+            content_wrapper.style.display="none"
+        }else{
+            intro.style.display="none"
+            content_wrapper.style.display="block"
+            populate(event.target.id)
+        }
         index_tiles = document.querySelectorAll('.index__tile')
         let prob = event.target
         index_tiles.forEach(x=>x.classList.remove('active'))
         prob.classList.add('active')
         section_header.textContent=String(event.target.textContent).replace(" -","")
-        populate(event.target.id)
+        
     }
 }
 //##################################### modal
@@ -137,3 +149,7 @@ function populateQuestions(){
     }
 }
 
+//############################################# intro handler
+function introHandler(){
+    console.log('inside intro');
+}
