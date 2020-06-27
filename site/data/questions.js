@@ -1,3 +1,88 @@
+//################################################# code used for fetching QUestions from project euler site
+//########################################################## html
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//   <meta charset="UTF-8">
+//   <link rel="shortcut icon" href="">
+// 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+// 	<link rel="stylesheet" href="css/style.css">
+// 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+//   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+//   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+//   <title>sandbox</title>
+  
+// </head>
+// <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+// <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+// <body>
+
+// <span id="object">Below is the Object. Coming in: <span id="counter"></span> <br><br></span>
+
+
+// <script type="module" src="script.js"></script>
+
+		   
+// </body>
+// </html>
+//########################################################## jS
+// let obj = document.querySelector('#object')
+// let questionObj = new Object()
+// let newArr = ["ellow "]
+// let counter = document.querySelector('#counter')
+// const noofQs = 300
+
+
+// async function getQ(num){
+//     var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
+//     targetUrl = `https://projecteuler.net/problem=${num}`
+//     await fetch(proxyUrl + targetUrl)
+//     .then(blob => blob.text())
+//    .then(function (html) {
+
+//     // Convert the HTML string into a document object
+//     var parser = new DOMParser();
+//     var doc = parser.parseFromString(html, 'text/html');
+//     var question = doc.querySelector('.problem_content')
+//     let title = doc.querySelector('#content h2').textContent
+//     console.log('question: ', question.innerHTML);
+//     questionObj[`${num}_title`] = title
+//     questionObj[`${num}_text`] = question.innerHTML
+//     counter.textContent = noofQs - num
+//     return doc;
+//   })
+//   .catch(e => {
+//     console.log(e);
+//     return e;
+//   });
+// }
+
+
+// async function main(){
+//   for(let i=1;i <=noofQs;i++){
+//     await  getQ(i)
+//   }
+  
+// }
+
+
+// async function caller(){
+//   await main()
+//   let bdy = document.querySelector('body')
+//   for(let i=1;i<=noofQs;i++){
+//     let ele = document.createElement('span')
+//     ele.setAttribute('style', 'white-space: pre;');
+//     ele.textContent = `${i}: {\r\ntitle:"${questionObj[`${i}_title`]}",  \r\ntext:\r\n` + "`"+questionObj[`${i}_text`]+ "`},\r\n"
+//     bdy.appendChild(ele)
+//   }
+
+// }
+
+// caller()
+
+
+//################################################# code used for fetching QUestions from project euler site
+
 const questions = {
 
     1: {

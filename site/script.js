@@ -1,4 +1,6 @@
 //##################################### modal
+const loader = document.querySelector('#loader_div')
+const wrapper = document.querySelector('.wrapper')
 window.onload = (async function(){ 
     while(!answersLoaded){
         await sleep(1);
@@ -6,6 +8,10 @@ window.onload = (async function(){
     while( typeof(data)!="object"){
         await sleep(1);
     }
+    //diabling loader
+    loader.style.display="none"
+    wrapper.style.display="block"
+    //diabling loader
     populateQuestions();
     populate("01"); 
     prettyPrint(); 
