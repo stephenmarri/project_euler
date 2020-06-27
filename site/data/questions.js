@@ -2,9 +2,8 @@ const questions = {
 1: {
 title:'Multiples of 3 and 5',
 text:
-`If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-
-Find the sum of all the multiples of 3 or 5 below 1000.
+`<p>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.</p>
+<p>Find the sum of all the multiples of 3 or 5 below 1000.</p>
 `
 },
 2:`
@@ -30,15 +29,12 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 `,
 6:`
-The sum of the squares of the first ten natural numbers is,
-
-12+22+...+102=385
-The square of the sum of the first ten natural numbers is,
-
-(1+2+...+10)2=552=3025
-Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025−385=2640.
-
-Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+<p>The sum of the squares of the first ten natural numbers is,</p>
+$$1^2 + 2^2 + ... + 10^2 = 385$$
+<p>The square of the sum of the first ten natural numbers is,</p>
+$$(1 + 2 + ... + 10)^2 = 55^2 = 3025$$
+<p>Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is \(3025 - 385 = 2640\).\(1+1=2\)</p>
+<p>Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.</p>
 `,
 7:`
 By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.

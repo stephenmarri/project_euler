@@ -1,7 +1,7 @@
 //##################################### modal
 window.onload = (async function(){ 
     while(!answersLoaded){
-        await sleep(20);
+        await sleep(10);
     }
     populateQuestions();
     populate("01"); 
@@ -54,7 +54,7 @@ function modalHandler(){
     let answer = data[`item${id}`]["answer"]
     let info = populateInfo(id)
 
-    questionHtml.textContent=question
+    questionHtml.innerHTML=question
     questionTitle.textContent=q_title
     answerHtml.textContent=answer
     infoHtml.innerHTML=info

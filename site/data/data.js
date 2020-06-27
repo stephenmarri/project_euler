@@ -6,7 +6,7 @@ function sleep(ms) {
   
 async function demo() {
 while(!answersLoaded){
-    await sleep(20);
+    await sleep(10);
 }
 data = {
     item01:{

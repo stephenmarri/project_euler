@@ -1,8 +1,7 @@
 let answers={
     ans01:{
         js:  "01.js"
-    },
-    
+    },    
     ans02:{
         js:  "02.js"
     },
@@ -118,7 +117,7 @@ let answers={
     ans67:{
         js:  "67.js",
         py: "67.py"
-    }
+    },
 }
 
 async function fetchData(path) {
