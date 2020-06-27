@@ -1,6 +1,6 @@
 //##################################### modal
 window.onload = (async function(){ 
-    while(!answersLoaded){
+    while(!answersLoaded && typeof(data)=="object"){
         await sleep(1);
     }
     populateQuestions();
@@ -27,11 +27,13 @@ let infoHtml=document.querySelector('#info_text')
 
 function menuHandler(){
     modal.classList.toggle('active')
+    document.querySelector("body").style.overflow = "hidden";
 }
 
 function modalHandler(){
     if(event.target.id == "modal"){
-        modal.classList.toggle('active')
+    document.querySelector("body").style.overflow = "unset";
+    modal.classList.toggle('active')
     }else{ 
         index_tiles = document.querySelectorAll('.index__tile')
         let prob = event.target
