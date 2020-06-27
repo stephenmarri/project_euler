@@ -3,6 +3,7 @@ const loader = document.querySelector('#loader_div')
 const wrapper = document.querySelector('.wrapper')
 const content_wrapper = document.querySelector('#content__wrapper')
 const intro = document.querySelector('#intro__wrapper')
+const prob_one = document.querySelector('#prob_one')
 
 window.onload = (async function(){ 
     while(!answersLoaded){
@@ -16,7 +17,7 @@ window.onload = (async function(){
     wrapper.style.display="block"
     //diabling loader
     populateQuestions();
-    populate("01"); 
+    //populate("01"); 
     prettyPrint(); 
 });
 const menuButton = document.querySelector('#index__text')
@@ -29,6 +30,7 @@ const modal = document.querySelector('#modal')
 modal.addEventListener('click',modalHandler)
 menuButton.addEventListener('click',menuHandler)
 problem_button.addEventListener('click',menuHandler)
+
 
 //content
 let questionHtml=document.querySelector('#q_text')
@@ -150,6 +152,14 @@ function populateQuestions(){
 }
 
 //############################################# intro handler
-function introHandler(){
-    console.log('inside intro');
-}
+prob_one.addEventListener('click',()=>{
+    intro.style.display="none"
+    content_wrapper.style.display="block"
+    index_tiles = document.querySelectorAll('.index__tile')
+    let prob = document.querySelector(`#${CSS.escape("01")}`)
+    index_tiles.forEach(x=>x.classList.remove('active'))
+    prob.classList.add('active')
+    section_header.textContent=String("Problem 01")
+    
+    populate("01")
+})

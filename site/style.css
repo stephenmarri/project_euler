@@ -104,7 +104,7 @@ body{
 
 /*********** intro************/
 #intro__wrapper{
-    display: none;
+    display: block;
     width: 99%;
     margin-left: auto;
     margin-right: auto;
@@ -131,11 +131,11 @@ body{
     font-weight: bold;
 }
 #js{
-    color: rgb(207, 207, 30);
+    color: #F9B200;
 }
 
 #py{
-    color: blue;
+    color: #306998;
 }
 
 #pr{
@@ -149,6 +149,11 @@ body{
 #prob_one{
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
+    color: #2f3542;
+    animation: blink 3s infinite;
+    font-size: 1.125em;
+
 }
 /*********** intro************/
 
@@ -157,7 +162,7 @@ body{
 #content__wrapper{
     width: 100%;
     margin-bottom: 2rem;
-    display: block;
+    display: none;
 }
 
 .block{
@@ -392,3 +397,24 @@ pre {
     }
 }
 /*********** media quries************/
+/*********** animation ************/
+@keyframes blink{
+    0%{
+        color: red;
+    }
+    25%{
+        color: purple;
+    }
+
+    50%{
+        color: green;
+    }
+    75%{
+        color: brown;
+    }
+    100%{
+        color: blue;
+    }
+}
+/*********** animation ************/
+
