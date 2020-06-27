@@ -2878,8 +2878,7 @@ const questions = {
     `
     },
     173: {
-        title: "Using up to one million tiles how many different "
-        hollow " square laminae can be formed?",
+        title: `Using up to one million tiles how many different "hollow " square laminae can be formed?`,
         text: `
     <p>We shall define a square lamina to be a square outline with a square "hole" so that the shape possesses vertical and horizontal symmetry. For example, using exactly thirty-two square tiles we can form two different square laminae:</p>
     <div style="text-align:center;">
@@ -2889,8 +2888,7 @@ const questions = {
     `
     },
     174: {
-        title: "Counting the number of "
-        hollow " square laminae that can form one, two, three, ... distinct arrangements",
+        title: `Counting the number of " hollow " square laminae that can form one, two, three, ... distinct arrangements`,
         text: `
     <p>We shall define a square lamina to be a square outline with a square "hole" so that the shape possesses vertical and horizontal symmetry.</p>
     <p>Given eight tiles it is possible to form a lamina in only one way: 3x3 square with a 1x1 hole in the middle. However, using thirty-two tiles it is possible to form two distinct laminae.</p>
@@ -3284,8 +3282,7 @@ const questions = {
     `
     },
     200: {
-        title: "Find the 200th prime-proof sqube containing the contiguous sub-string "
-        200 "",
+        title: `Find the 200th prime-proof sqube containing the contiguous sub-string "200"`,
         text: `
     <p>We shall define a sqube to be a number of the form, <var>p</var><sup>2</sup><var>q</var><sup>3</sup>, where <var>p</var> and <var>q</var> are distinct primes.<br>
     For example, 200 = 5<sup>2</sup>2<sup>3</sup> or 120072949 = 23<sup>2</sup>61<sup>3</sup>.</p>

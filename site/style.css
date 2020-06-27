@@ -317,6 +317,10 @@ pre {
     #pb_text{
         padding: 0.3rem 1rem;
     }
+
+    #q_text{
+        padding-left: 1rem;
+    }
     
 
     #modal{
