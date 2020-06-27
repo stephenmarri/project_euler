@@ -24,7 +24,8 @@ data = {
     },
     item02:{
         id:02,
-        question:questions[2],
+        question:questions[2].text,
+        q_title:questions[2].title,
         code:{
             count:1,
             JavaScript:answers.ans02.js
@@ -36,7 +37,8 @@ data = {
     },
     item03:{
         id:03,
-        question:questions[3],
+        question:questions[3].text,
+        q_title:questions[3].title,
         code:{
             count:1,
             JavaScript:answers.ans03.js
@@ -49,7 +51,8 @@ data = {
     },
     item04:{
         id:04,
-        question:questions[4],
+        question:questions[4].text,
+        q_title:questions[4].title,
         code:{
             count:1,
             JavaScript:answers.ans04.js
@@ -62,7 +65,8 @@ data = {
     },
     item05:{
         id:05,
-        question:questions[5],
+        question:questions[5].text,
+        q_title:questions[5].title,
         code:{
             count:1,
             JavaScript:answers.ans05.js
@@ -75,7 +79,8 @@ data = {
     },
     item06:{
         id:06,
-        question:questions[6],
+        question:questions[6].text,
+        q_title:questions[1].title,
         code:{
             count:1,
             JavaScript:answers.ans06.js
@@ -88,7 +93,8 @@ data = {
     },
     item07:{
         id:07,
-        question:questions[7],
+        question:questions[7].text,
+        q_title:questions[1].title,
         code:{
             count:1,
             JavaScript:answers.ans07.js
@@ -101,7 +107,8 @@ data = {
     },
     item08:{
         id:08,
-        question:questions[8],
+        question:questions[8].text,
+        q_title:questions[8].title,
         code:{
             count:1,
             JavaScript:answers.ans08.js            
@@ -113,7 +120,8 @@ data = {
     },
     item09:{
         id:09,
-        question:questions[9],
+        question:questions[9].text,
+        q_title:questions[9].title,
         code:{
             count:2,
             JavaScript:answers.ans09.js,
@@ -126,7 +134,8 @@ data = {
     },
     item10:{
         id:10,
-        question:questions[10],
+        question:questions[10].text,
+        q_title:questions[10].title,
         code:{
             count:1,
             JavaScript:answers.ans10.js            
@@ -138,7 +147,8 @@ data = {
     },
     item11:{
         id:11,
-        question:questions[11],
+        question:questions[11].text,
+        q_title:questions[11].title,
         code:{
             count:2,
             JavaScript:answers.ans11.js,
@@ -151,7 +161,8 @@ data = {
     },
     item12:{
         id:12,
-        question:questions[12],
+        question:questions[12].text,
+        q_title:questions[12].title,
         code:{
             count:2,
             JavaScript:answers.ans12.js,
@@ -164,7 +175,8 @@ data = {
     },
     item13:{
         id:13,
-        question:questions[13],
+        question:questions[13].text,
+        q_title:questions[13].title,
         code:{
             count:2,
             JavaScript:answers.ans13.js,
@@ -177,7 +189,8 @@ data = {
     },
 item14:{
         id:14,
-        question:questions[14],
+        question:questions[14].text,
+        q_title:questions[14].title,
         code:{
             count:2,
             JavaScript:answers.ans14.js,
@@ -190,7 +203,8 @@ item14:{
     },
 item15:{
         id:15,
-        question:questions[15],
+        question:questions[15].text,
+        q_title:questions[15].title,
         code:{
             count:2,
             JavaScript:answers.ans15.js,
@@ -203,7 +217,8 @@ item15:{
     },
 item16:{
         id:16,
-        question:questions[16],
+        question:questions[16].text,
+        q_title:questions[16].title,
         code:{
             count:2,
             JavaScript:answers.ans16.js,
@@ -216,7 +231,8 @@ item16:{
     },
 item17:{
         id:17,
-        question:questions[17],
+        question:questions[17].text,
+        q_title:questions[17].title,
         code:{
             count:2,
             JavaScript:answers.ans17.js,
@@ -229,7 +245,8 @@ item17:{
     },
 item18:{
         id:18,
-        question:questions[18],
+        question:questions[18].text,
+        q_title:questions[18].title,
         code:{
             count:2,
             JavaScript:answers.ans18.js,
@@ -242,7 +259,8 @@ item18:{
     },
 item19:{
         id:19,
-        question:questions[19],
+        question:questions[19].text,
+        q_title:questions[19].title,
         code:{
             count:2,
             JavaScript:answers.ans19.js,
@@ -255,7 +273,8 @@ item19:{
     },
 item20:{
         id:20,
-        question:questions[20],
+        question:questions[20].text,
+        q_title:questions[20].title,
         code:{
             count:2,
             JavaScript:answers.ans20.js,
@@ -268,7 +287,8 @@ item20:{
     },
 item21:{
         id:21,
-        question:questions[21],
+        question:questions[21].text,
+        q_title:questions[21].title,
         code:{
             count:2,
             JavaScript:answers.ans21.js,
@@ -281,7 +301,8 @@ item21:{
     },
 item22:{
         id:22,
-        question:questions[22],
+        question:questions[22].text,
+        q_title:questions[22].title,
         code:{
             count:2,
             JavaScript:answers.ans22.js,
@@ -294,7 +315,8 @@ item22:{
     },
 item23:{
         id:23,
-        question:questions[23],
+        question:questions[23].text,
+        q_title:questions[23].title,
         code:{
             count:2,
             JavaScript:answers.ans23.js,
@@ -307,7 +329,8 @@ item23:{
     },
 item24:{
         id:24,
-        question:questions[24],
+        question:questions[24].text,
+        q_title:questions[24].title,
         code:{
             count:2,
             JavaScript:answers.ans24.js,
@@ -320,7 +343,8 @@ item24:{
     },
 item25:{
         id:25,
-        question:questions[25],
+        question:questions[25].text,
+        q_title:questions[25].title,
         code:{
             count:2,
             JavaScript:answers.ans25.js,
@@ -333,7 +357,8 @@ item25:{
     },
 item26:{
         id:26,
-        question:questions[26],
+        question:questions[26].text,
+        q_title:questions[26].title,
         code:{
             count:2,
             JavaScript:answers.ans26.js,
@@ -346,7 +371,8 @@ item26:{
     },
 item27:{
         id:27,
-        question:questions[27],
+        question:questions[27].text,
+        q_title:questions[27].title,
         code:{
             count:2,
             JavaScript:answers.ans27.js,
@@ -359,7 +385,8 @@ item27:{
     },
 item28:{
         id:28,
-        question:questions[28],
+        question:questions[28].text,
+        q_title:questions[28].title,
         code:{
             count:2,
             JavaScript:answers.ans28.js,
@@ -372,7 +399,8 @@ item28:{
     },
 item29:{
         id:29,
-        question:questions[29],
+        question:questions[29].text,
+        q_title:questions[29].title,
         code:{
             count:2,
             JavaScript:answers.ans29.js,
@@ -385,7 +413,8 @@ item29:{
     },
 item30:{
         id:30,
-        question:questions[30],
+        question:questions[30].text,
+        q_title:questions[30].title,
         code:{
             count:2,
             JavaScript:answers.ans30.js,
@@ -398,7 +427,8 @@ item30:{
     },
 item31:{
         id:31,
-        question:questions[31],
+        question:questions[31].text,
+        q_title:questions[31].title,
         code:{
             count:2,
             JavaScript:answers.ans31.js,
@@ -411,7 +441,8 @@ item31:{
     },
     item67:{
         id:67,
-        question:questions[67],
+        question:questions[67].text,
+        q_title:questions[67].title,
         code:{
             count:2,
             JavaScript:answers.ans67.js,
