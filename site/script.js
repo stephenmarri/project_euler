@@ -4,6 +4,7 @@ const wrapper = document.querySelector('.wrapper')
 const content_wrapper = document.querySelector('#content__wrapper')
 const intro = document.querySelector('#intro__wrapper')
 const prob_one = document.querySelector('#prob_one')
+let intro_sol_dom = document.querySelector('#sol_count') 
 
 window.onload = (async function(){ 
     while(!answersLoaded){
@@ -136,6 +137,7 @@ function populateInfo(id){
 
 function populateQuestions(){
     let count = Object.keys(data).length
+    intro_sol_dom.textContent = count
     let modal=document.querySelector('#modal__index')
     for(let i=0;i<count;i++){
         let key = Object.keys(data)[i]
