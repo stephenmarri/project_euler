@@ -14,7 +14,7 @@ window.onload = (async function(){
     // while( typeof(data)!="object"){
     //     await sleep(1);
     // }
-    await sleep(3000)
+    await sleep(3000 + Math.floor(Math.random()*4)*1000)
     //diabling loader
     loader.style.display="none"
     wrapper.style.display="block"
@@ -120,11 +120,26 @@ function populateBtns(id){
 
 function populateCode(id){
     try {
+        if(typeof(checker) !== "undefined") clearInterval(checker)
         let btn = document.querySelector('#code .active').id    
         let ans = data[`item${id}`]["code"][`${btn}`](id)
         codeHtml.innerHTML= ans
         codeHtml.classList.remove('prettyprinted')
         prettyPrint()
+
+        //create a timer to check if ans is updated and clear it
+        if(String(ans).startsWith("Loading answer for")){
+            let checker = setInterval(()=>{
+            let ans = data[`item${id}`]["code"][`${btn}`](id)
+
+            if(!String(ans).startsWith("Loading answer for")){
+                clearInterval(checker)
+                codeHtml.innerHTML= ans
+                codeHtml.classList.remove('prettyprinted')
+                prettyPrint()
+            }
+            },500)
+        }
         
     } catch (error) {         
         codeHtml.innerHTML = `Huh! Something's wrong. Try another question.`

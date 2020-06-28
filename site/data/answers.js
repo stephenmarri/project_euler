@@ -120,43 +120,49 @@ let answers={
     },
 }
 
-async function fetchData(path) {
-    try {
-        const response = await fetch(path);
-        const exam = await response.text();
-        return exam;
-    } catch (error) {
-        console.error(error);
-    }
-}
+//the below three functions were my first attempt.
+//I tried to load all the answers and then run the remaining code.
+// changed this approach and implemented a new method where
+// each bit of answer is called only when it is requested for 
+// or clicked upon.
 
-async function getData(type, path){
-    let _path;
-    if(type=='js'){
-        _path = `javascript/${path}`
-    }else if(type=='py'){
-        _path=`python/${path}`
-    }
+// async function fetchData(path) {
+//     try {
+//         const response = await fetch(path);
+//         const exam = await response.text();
+//         return exam;
+//     } catch (error) {
+//         console.error(error);
+//     }
+// }
 
-    let dt = await fetchData(_path);
-    return dt
-}
-let answersLoaded = false
-async function main(){
-    let count = Object.keys(answers).length
-    for(let i=0;i<count;i++){
-        let key = Object.keys(answers)[i];
+// async function getData(type, path){
+//     let _path;
+//     if(type=='js'){
+//         _path = `javascript/${path}`
+//     }else if(type=='py'){
+//         _path=`python/${path}`
+//     }
+
+//     let dt = await fetchData(_path);
+//     return dt
+// }
+// let answersLoaded = false
+// async function main(){
+//     let count = Object.keys(answers).length
+//     for(let i=0;i<count;i++){
+//         let key = Object.keys(answers)[i];
         
-        let subCount = Object.keys(answers[key]).length
+//         let subCount = Object.keys(answers[key]).length
         
-        for(let j=0;j<subCount;j++){
-            let subKey = Object.keys(answers[key])[j]
-            let item = answers[key][subKey]
-            answers[key][subKey] = await getData(subKey ,item)
-        }
-    }
-    answersLoaded=true
-}
+//         for(let j=0;j<subCount;j++){
+//             let subKey = Object.keys(answers[key])[j]
+//             let item = answers[key][subKey]
+//             answers[key][subKey] = await getData(subKey ,item)
+//         }
+//     }
+//     answersLoaded=true
+// }
 
 //main()
 

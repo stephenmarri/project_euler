@@ -441,22 +441,12 @@ item31:{
     },
     item67:{
         id:67,
-        load: false,
-        check: this.id,
         question:questions[67].text,
         q_title:questions[67].title,
         code:{
             count:2,
-            JavaScript: ()=>{
-                if(data.item67.load == true){
-                    return ansGen("67","js")
-                }
-            },
-            Python: ()=>{
-                if(data.item67.load == true){
-                    return ansGen("67","py")
-                }
-            },
+            JavaScript: "",
+            Python: "",
         },
         answer:"7273",
         info:{
