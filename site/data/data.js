@@ -5,12 +5,12 @@ function sleep(ms) {
   }
   
 async function demo() {
-while(!answersLoaded){
-    await sleep(1);
-}
+// while(!answersLoaded){
+//     await sleep(1);
+// }
 data = {
     item01:{
-        id:01,
+        id:'01',
         question:questions[1].text,
         q_title:questions[1].title,
         code:{
@@ -23,7 +23,7 @@ data = {
         }
     },
     item02:{
-        id:02,
+        id:'02',
         question:questions[2].text,
         q_title:questions[2].title,
         code:{
@@ -36,7 +36,7 @@ data = {
         }
     },
     item03:{
-        id:03,
+        id:'03',
         question:questions[3].text,
         q_title:questions[3].title,
         code:{
@@ -50,7 +50,7 @@ data = {
         }
     },
     item04:{
-        id:04,
+        id:'04',
         question:questions[4].text,
         q_title:questions[4].title,
         code:{
@@ -64,7 +64,7 @@ data = {
         }
     },
     item05:{
-        id:05,
+        id:'05',
         question:questions[5].text,
         q_title:questions[5].title,
         code:{
@@ -78,7 +78,7 @@ data = {
         }
     },
     item06:{
-        id:06,
+        id:'06',
         question:questions[6].text,
         q_title:questions[6].title,
         code:{
@@ -92,7 +92,7 @@ data = {
         }
     },
     item07:{
-        id:07,
+        id:'07',
         question:questions[7].text,
         q_title:questions[7].title,
         code:{
@@ -106,7 +106,7 @@ data = {
         }
     },
     item08:{
-        id:08,
+        id:'08',
         question:questions[8].text,
         q_title:questions[8].title,
         code:{
@@ -119,7 +119,7 @@ data = {
         }
     },
     item09:{
-        id:09,
+        id:'09',
         question:questions[9].text,
         q_title:questions[9].title,
         code:{
@@ -431,7 +431,7 @@ item31:{
         q_title:questions[31].title,
         code:{
             count:2,
-            JavaScript:answers.ans31.js,
+            JavaScript: answers.ans31.js ,
             Python: answers.ans31.py            
         },
         answer:"73682",
@@ -441,12 +441,22 @@ item31:{
     },
     item67:{
         id:67,
+        load: false,
+        check: this.id,
         question:questions[67].text,
         q_title:questions[67].title,
         code:{
             count:2,
-            JavaScript:answers.ans67.js,
-            Python: answers.ans67.py            
+            JavaScript: ()=>{
+                if(data.item67.load == true){
+                    return ansGen("67","js")
+                }
+            },
+            Python: ()=>{
+                if(data.item67.load == true){
+                    return ansGen("67","py")
+                }
+            },
         },
         answer:"7273",
         info:{
@@ -457,3 +467,73 @@ item31:{
 }
 
 demo();
+
+
+// the below code replaces the values of JavaScript and Python keys of object
+// code of each item and replaces them with either ansGenJS or ansGenPy respectively.
+// these functions then check if the answer is already loaded. If not it will fetch the answer.
+// generate buildataCode by iteration
+function genBuild(){
+    for( i in data){
+        for(x in data[i]["code"]){
+            let id = String(data[i]["id"])
+            if(x == "JavaScript"){
+                buildDataCode(id,"js")
+            }else if(x == "Python"){
+               buildDataCode(id,"py")
+            }
+        }
+    }
+}
+
+genBuild()
+
+
+function buildDataCode(i,type){
+    if(type == "js"){
+        data[`item${i}`]["code"]["JavaScript"] = ansGenJS
+    }
+    if(type == "py"){        
+        data[`item${i}`]["code"]["Python"] = ansGenPY
+    }
+}   
+
+function ansGenJS(no){
+    let type = "js"
+    let dir = "../javascript"
+        if( answers[`ans${no}`][`${type}`] == `${no}.${type}` ){
+            fetch(`${dir}/${no}.${type}`).then(x => x.text())
+            .then(x => answers[`ans${no}`][`${type}`]  = x)
+            return(`Loading answer for problem ${no}...`)
+        } 
+        else{
+            return(answers[`ans${no}`][`${type}`] )
+        }
+    }
+    function ansGenPY(no){
+        let type = "py"
+        let dir = "../python"
+        if( answers[`ans${no}`][`${type}`] == `${no}.${type}` ){
+            fetch(`${dir}/${no}.${type}`).then(x => x.text())
+            .then(x => answers[`ans${no}`][`${type}`]  = x)
+            return(`Loading answer for problem ${no}...`)
+        } 
+        else{
+            return(answers[`ans${no}`][`${type}`] )
+        }
+    }
+
+
+
+// function ansGen(no, type){
+//         console.log(this);
+//         let dir = type == "js" ? "javascript" : "python"
+//             if( answers[`ans${no}`][`${type}`] == `${no}.${type}` ){
+//                 fetch(`${dir}/${no}.${type}`).then(x => x.text())
+//                 .then(x => answers[`ans${no}`][`${type}`]  = x)
+//                 return("Loading answer for 67")
+//             } 
+//             else{
+//                 return(answers[`ans${no}`][`${type}`] )
+//             }
+// }

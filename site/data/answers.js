@@ -133,9 +133,9 @@ async function fetchData(path) {
 async function getData(type, path){
     let _path;
     if(type=='js'){
-        _path = `../javascript/${path}`
+        _path = `javascript/${path}`
     }else if(type=='py'){
-        _path=`../python/${path}`
+        _path=`python/${path}`
     }
 
     let dt = await fetchData(_path);
@@ -158,6 +158,6 @@ async function main(){
     answersLoaded=true
 }
 
-main()
+//main()
 
 

@@ -6,21 +6,24 @@ const intro = document.querySelector('#intro__wrapper')
 const prob_one = document.querySelector('#prob_one')
 let intro_sol_dom = document.querySelector('#sol_count') 
 
+
 window.onload = (async function(){ 
-    while(!answersLoaded){
-        await sleep(1);
-    }
-    while( typeof(data)!="object"){
-        await sleep(1);
-    }
+    // while(!answersLoaded){
+    //     await sleep(1);
+    // }
+    // while( typeof(data)!="object"){
+    //     await sleep(1);
+    // }
+    await sleep(3000)
     //diabling loader
     loader.style.display="none"
     wrapper.style.display="block"
     //diabling loader
-    populateQuestions();
     //populate("01"); 
+    populateQuestions();
     prettyPrint(); 
 });
+//populateQuestions();
 const menuButton = document.querySelector('#index__text')
 const section_header= document.querySelector('#pb__text')
 const problem_button = document.querySelector('#pb__text')
@@ -116,11 +119,16 @@ function populateBtns(id){
 }
 
 function populateCode(id){
-    let btn = document.querySelector('#code .active').id    
-    let ans = data[`item${id}`]["code"][`${btn}`]
-    codeHtml.innerHTML= ans
-    codeHtml.classList.remove('prettyprinted')
-    prettyPrint()
+    try {
+        let btn = document.querySelector('#code .active').id    
+        let ans = data[`item${id}`]["code"][`${btn}`](id)
+        codeHtml.innerHTML= ans
+        codeHtml.classList.remove('prettyprinted')
+        prettyPrint()
+        
+    } catch (error) {         
+        codeHtml.innerHTML = `Huh! Something's wrong. Try another question.`
+    }
 }
 
 function changeCode(){
@@ -144,7 +152,7 @@ function populateQuestions(){
         let html = document.createElement('div')
         html.classList.add('index__tile')
         if(i<9){
-            html.id=`0${data[key]["id"]}`
+            html.id=`${data[key]["id"]}`
         }else{
             html.id=`${data[key]["id"]}`
         }
